@@ -1,0 +1,13 @@
+name: app
+
+services:
+  app:
+    image: byufdhs2219/simple-apps-c:2.0
+    build: ./app
+    ports:
+      - "6700:3000"
+    volumes:
+      - vol-simple:/app/public/images/
+
+volumes:
+  vol-simple:
