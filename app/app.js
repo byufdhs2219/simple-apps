@@ -19,6 +19,9 @@ app.get('/app1', (req, res) => {
 app.get('/app2', (req, res) => {
   res.send('Hello this App 2!')
 });
+app.get('/app3', (req, res) => {
+  res.send('Hello this App 3!')
+});
 
 app.get('/users', (req, res, next) => {
   const sql = "SELECT * FROM tb_data ORDER BY id desc"
