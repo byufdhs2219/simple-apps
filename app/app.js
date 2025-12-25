@@ -24,7 +24,7 @@ app.get('/app3', (req, res) => {
 });
 
 app.get('/testindex', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));  
+  res.sendFile(path.join(__dirname,'public','index.html'));  
 });
 
 app.get('/users', (req, res, next) => {
