@@ -23,6 +23,10 @@ app.get('/app3', (req, res) => {
   res.send('Hello this App 3!')
 });
 
+app.get('/testindex', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));  
+});
+
 app.get('/users', (req, res, next) => {
   const sql = "SELECT * FROM tb_data ORDER BY id desc"
   connection.query(sql,(error, fields) => {
