@@ -2,7 +2,7 @@ services:
   apps:
     container_name: ct-simpleapps-bayu
     build: ./apps
-    image: simpleapps-bayu:8.34
+    image: simpleapps-bayu:8.36
     ports:
       - "10008:3000"
     restart: always
