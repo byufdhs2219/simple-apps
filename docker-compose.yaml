@@ -1,6 +1,6 @@
 services:
   apps:
-    container_name: ct-simpleapps-
+    container_name: ct-simpleapps-bayu
     build: ./apps
     ports:
       - "10008:3000"
